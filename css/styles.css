@@ -83,11 +83,15 @@ button {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 767px) {
+    .logo {
+        padding-top: 21px;
+        padding-bottom: 19px;
+    }
+}
+
 .logo {
     margin-right: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
     font-family: raleway, sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -100,11 +104,13 @@ button {
 }
 
 .section {
+    padding-top: 96px;
     padding-bottom: 96px;
 }
 
 @media only screen and (min-width: 1158px) {
     .section {
+        padding-top: 120px;
         padding-bottom: 120px;
     }
 }
@@ -459,15 +465,16 @@ button {
     transition: background-color var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .mobile-socials {
     display: flex;
-    justify-content: space-between;
-    gap: 16px;
+    justify-content: flex-start;
+    gap: 56px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 427px) {
     .mobile-socials {
-        justify-content: flex-start;
+        gap: 24px;
     }
 }
 
@@ -550,7 +557,7 @@ button {
 
 @media only screen and (min-width: 1158px) {
     .hero {
-        margin-top: 73px;
+        margin-top: 72px;
         padding-top: 188px;
         padding-bottom: 188px;
         max-width: 1440px;
@@ -619,9 +626,7 @@ button {
 }
 
 /* About styles */
-.about {
-    padding-top: 120px;
-}
+.about {}
 
 .about-list {
     display: flex;
@@ -699,6 +704,7 @@ button {
 @media only screen and (min-width: 1158px) {
     .services {
         display: block;
+        padding-top: 0;
     }
 }
 
@@ -718,7 +724,6 @@ button {
 
 /* Team styles */
 .team {
-    padding: 120px 0;
     background-color: var(--light-bg-color);
 }
 
@@ -798,10 +803,6 @@ button {
 .team-description {}
 
 /* Customers styles */
-.customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
     .customers-container {
@@ -870,8 +871,27 @@ button {
 }
 
 /* Content styles */
+
 .content {
-    padding-top: 169px;
+    margin-top: 70px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+    .content {
+        margin-top: 72px;
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .content {
+        margin-top: 72px;
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
 }
 
 .content-list {
@@ -1051,6 +1071,10 @@ button {
     }
 }
 
+.footer-tab-container {
+    margin-bottom: 72px;
+}
+
 @media only screen and (min-width: 768px) {
     .footer-tab-container {
         display: flex;
@@ -1059,8 +1083,17 @@ button {
     }
 }
 
-.footer-logo-container {
-    margin-bottom: 72px;
+@media only screen and (min-width: 1158px) {
+    .footer-tab-container {
+        margin-right: 80px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-logo-container {
+        margin-bottom: 72px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1072,13 +1105,6 @@ button {
 @media only screen and (min-width: 1158px) {
     .footer-logo-container {
         margin-right: 120px;
-        margin-bottom: 0;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .footer-link {
-        margin-left: 76px;
     }
 }
 
@@ -1086,6 +1112,13 @@ button {
     display: inline-block;
     margin-bottom: 16px;
     padding: 0;
+    height: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-link {
+        margin-left: 76px;
+    }
 }
 
 .footer-logo-text {
@@ -1099,16 +1132,6 @@ button {
     color: var(--light-bg-color);
 }
 
-.social-media-container {
-    margin-bottom: 72px;
-}
-
-@media only screen and (min-width: 1158px) {
-    .social-media-container {
-        margin-right: 80px;
-        margin-bottom: 0;
-    }
-}
 
 .footer-socials-description {
     font-weight: 500;
